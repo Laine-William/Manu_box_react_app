@@ -11,7 +11,7 @@ const Home = () => {
     const [productData, setProductData] = useState([]);
 
     async function getResponse(){
-        const res = await fetch('https://fakestoreapi.com/products')
+        const res = await fetch("articles.json")
                           .then(res=> res.json());
                           setProductData(await res);
     }
@@ -24,13 +24,13 @@ const Home = () => {
         <Container className="py-4">
             <Row className="justify-content-center">
                 <Col xs={10} md={7} lg={6} xl={4} className="mb-3 mx-auto text-center">
-                    <h1 className={theme? 'text-light my-5': 'text-black my-5'}>Search products</h1>
+                    <h1 className={theme? 'text-light my-5': 'text-black my-5'}>Rechercher un produit</h1>
                     <InputGroup className="mb-3">
                         <InputGroup.Text className={theme? 'bg-black text-dark-primary': 'bg-light text-light-primary'}>
                             <BiSearch size="2rem" />
                         </InputGroup.Text>
                         <FormControl 
-                            placeholder="Search"
+                            placeholder="Taper votre recherche"
                             value={searchInput}
                             onChange={(e)=> setSearchInput(e.target.value)}
                             className={theme? 'bg-light-black text-light': 'bg-light text-black'}

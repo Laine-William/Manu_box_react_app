@@ -11,7 +11,7 @@ import { useCart } from 'react-use-cart';
 import { useThemeHook } from '../GlobalComponents/ThemeProvider';
 
 
-import { BsCartCheck, BsCartX} from 'react-icons/bs';
+import { BsCartX} from 'react-icons/bs';
 
 
 const Cart = () => {
@@ -33,7 +33,7 @@ const Cart = () => {
 
             <h1 className={`${theme? 'text-light': 'text-light-primary'} my-5 text-center`}>
 
-                {isEmpty? 'Your Cart is Empty' : 'The Cart'}
+                {isEmpty? 'Votre panier est vide !' : 'Le Panier'}
             </h1>
 
             <Row className="justify-content-center">
@@ -58,12 +58,12 @@ const Cart = () => {
                                             {item.title}
                                         </h6>
                                     </td>
-                                    <td>Rs. {item.price}</td>
-                                    <td>Quantity ({item.quantity})</td>
+                                    <td>{item.tall} m2</td>
+                                    <td>Quantite ({item.quantity})</td>
                                     <td>
                                         <Button onClick={()=> updateItemQuantity(item.id, item.quantity - 1)} className="ms-2">-</Button>
                                         <Button onClick={()=> updateItemQuantity(item.id, item.quantity + 1)} className="ms-2">+</Button>
-                                        <Button variant="danger" onClick={()=> removeItem(item.id)} className="ms-2">Remove Item</Button>
+                                        <Button variant="danger" onClick={()=> removeItem(item.id)} className="ms-2">Supprimer cette article</Button>
                                     </td>
                                 </tr>
                             )
@@ -76,7 +76,7 @@ const Cart = () => {
                         className={`${theme? 'bg-light-black text-light' : 'bg-light text-balck'} justify-content-center w-100`}
                     >
                         <Col className="py-2">
-                            <h4>Total Price: Rs. {cartTotal}</h4>
+                            <h4>Taille total : {cartTotal} m2</h4>
                         </Col>
                         <Col className="p-0" md={4}>
                             <Button variant="danger"
@@ -84,13 +84,7 @@ const Cart = () => {
                                 onClick={()=> emptyCart()}
                             >
                                 <BsCartX size="1.7rem" />
-                                Clear Cart
-                            </Button>
-                            <Button variant="success"
-                                className="m-2"
-                            >
-                                <BsCartCheck size="1.7rem" />
-                                Clear Cart
+                                Vider le panier en cours
                             </Button>
                         </Col>
                     </Row>}

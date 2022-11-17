@@ -13,7 +13,6 @@ const Header = () => {
 
     useEffect(()=>{
         setThemeMode(darkMode);
-        console.log(darkMode)
     },[darkMode]);
 
     const {
@@ -30,15 +29,13 @@ const Header = () => {
         <Container>
           <Link to="/">
             <Navbar.Brand className={darkMode? 'text-dark-primary': 'text-light-primary'}>
-                <b>Simple-ecart</b>
+                <b>La Manu box</b>
             </Navbar.Brand>
           </Link>
+
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Link to="sign-in" className={`nav-link ${darkMode? 'text-dark-primary' : 'text-light-primary'}`}>
-                Sign in
-              </Link>
               <Nav.Link 
                 className={darkMode? 'text-dark-primary': 'text-light-primary'}
                 onClick={()=>setDarkMode(!darkMode)}
@@ -51,11 +48,11 @@ const Header = () => {
               >
                 <BiCart size="2rem"/>
                 {!isEmpty && <span style={{ position: 'relative', left: '-21px', top: '-18px'}}>{totalItems}</span>}
-                <span style={{ marginLeft: !isEmpty ? '-13px': 0}}>&nbsp;Cart</span>
+                <span style={{ marginLeft: !isEmpty ? '-13px': 0}}>&nbsp;Panier</span>
               </Link>
               <Link to="my-account" className={`nav-link ${darkMode? 'text-dark-primary': 'text-light-primary'}`}>
                   <VscAccount size="1.8rem"/>
-                  &nbsp;My Account
+                  &nbsp;Nos offres de services
               </Link>
             </Nav>
           </Navbar.Collapse>
