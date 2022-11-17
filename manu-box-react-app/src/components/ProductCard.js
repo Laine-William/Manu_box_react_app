@@ -2,7 +2,6 @@ import React from 'react';
 import { Button, Card} from 'react-bootstrap';
 import { useThemeHook } from '../GlobalComponents/ThemeProvider';
 import { useCart } from 'react-use-cart';
-import { BsCartPlus } from 'react-icons/bs';
 
 const ProductCard = (props) => {
     let { image, tall, title} = props.data;
@@ -36,7 +35,6 @@ const ProductCard = (props) => {
                     onClick={()=> addToCart()}
                     className={`${theme? 'bg-dark-primary text-black':'bg-light-primary' } d-flex align-item-center m-auto border-0`}
                 >
-                    <BsCartPlus size="1.8rem" />
                     Ajouter
                 </Button>
             </Card.Body>
