@@ -19,7 +19,7 @@ const OrderCard = (props) => {
                         <Card.Title>{props.title}</Card.Title>
                         <Card.Text>
                             <Badge pill bg="success">
-                                Delivered on {props.deliveredDate}
+                                Description : {props.description}
                             </Badge>
                         </Card.Text>
                     </Card.Body>
