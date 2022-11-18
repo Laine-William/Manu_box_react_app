@@ -1,8 +1,13 @@
 import React from 'react';
-import { Container, Navbar, Nav } from 'react-bootstrap';
+import { Container, 
+         Navbar, 
+         Nav } from 'react-bootstrap';
+
 import { FaCouch } from 'react-icons/fa';
 import { IoMdContact } from 'react-icons/io';
+
 import { Link } from "@reach/router";
+
 import { useCart } from "react-use-cart";
 
 const Header = () => {
@@ -32,9 +37,10 @@ const Header = () => {
                 className={`text-light-primary d-flex align-items-center`}
               >
                 <FaCouch size="2rem"/>
-                {!isEmpty && <span style={{ position: 'relative', left: '-21px', top: '-18px'}}>{totalItems}</span>}
+                {! isEmpty && <span style={{ position: 'relative', left: '-21px', top: '-18px'}}>{totalItems}</span>}
                 <span style={{ marginLeft: !isEmpty ? '-13px': 0}}>&nbsp;Mes meubles</span>
               </Link>
+              
               <Link to="my-account" className={`nav-link 'text-light-primary`}>
                   <IoMdContact size="1.8rem"/>
                   &nbsp;Nos offres de services

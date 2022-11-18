@@ -68,7 +68,7 @@ const Cart = () => {
                     >
                         <Col className="py-2">
                             <h4>Taille total : {cartTotal} m²</h4>
-                            <h4>Votre taille de box : {cartTotal} m²</h4>
+                            <h4>Votre taille de box : {}</h4>
                         </Col>
                         <Col className="p-0" md={4}>
                             <Button variant="danger"
