@@ -1,10 +1,15 @@
+// Importe les npm install
 import React from 'react';
+
+// Imorte les composants bootstrap
 import { Card, 
          Row, 
          Col, 
          Badge } from 'react-bootstrap';
          
+// Importe le theme
 import { useThemeHook } from '../GlobalComponents/ThemeProvider';
+
 
 const OrderCard = (props) => {
 
