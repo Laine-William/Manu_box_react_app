@@ -13,10 +13,8 @@ import MyAccount from "./Pages/MyAccount";
 
 function App() {
 
-  const [theme] = useThemeHook();
-
   return (
-    
+
     <main className={'bg-light-2'} style={{ height: '100vh', overflowY: 'auto'}}>
 
       <Header/>
