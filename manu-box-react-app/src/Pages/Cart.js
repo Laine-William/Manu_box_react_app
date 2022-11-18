@@ -99,14 +99,16 @@ const Cart = () => {
                         {/* Calcul la taille total */}
                         <Col className="py-2">
                             <h4>Taille total : {cartTotal} m²</h4>
+
                             <h4>Votre taille de box : {}
                                 <Link to="../my-account">
                                     <Button className="ms-2">Voir les offres</Button>
-                                </Link></h4>
+                                </Link>
+                            </h4>
                         </Col>
 
                         {/* Bouton pour vider le panier */}
-                        <Col className="p-0" md={4}>
+                        <Col className = "p-0" md = {4}>
                             <Button variant = "danger"
                                 className = "m-2"
                                 onClick = { () => emptyCart ()}>
