@@ -3,7 +3,6 @@ import React from 'react';
 
 import { Button, Container, Col, Row, Table} from 'react-bootstrap';
 
-
 import { useCart } from 'react-use-cart';
 
 import { BsCartX} from 'react-icons/bs';
@@ -50,7 +49,7 @@ const Cart = () => {
                                             {item.title}
                                         </h6>
                                     </td>
-                                    <td>{item.tall} m2</td>
+                                    <td>{item.price} m2</td>
                                     <td>Quantite ({item.quantity})</td>
                                     <td>
                                         <Button onClick={()=> updateItemQuantity(item.id, item.quantity - 1)} className="ms-2">-</Button>
@@ -69,6 +68,7 @@ const Cart = () => {
                     >
                         <Col className="py-2">
                             <h4>Taille total : {cartTotal} m²</h4>
+                            <h4>Votre taille de box : {cartTotal} m²</h4>
                         </Col>
                         <Col className="p-0" md={4}>
                             <Button variant="danger"
