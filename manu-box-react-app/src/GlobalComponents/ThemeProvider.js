@@ -24,7 +24,7 @@ const ThemeProvider = (props) => {
     // 
     const setThemeMode = mode => setTheme (mode);
 
-    // 
+    // Retourne le contenu
     return (
 
         // 

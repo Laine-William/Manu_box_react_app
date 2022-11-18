@@ -29,11 +29,11 @@ const Home = () => {
     async function getResponse(){
 
         // Reponse de la recherche avec la methode fetch pour le fichier json (stokage des donnees)
-        const res = await fetch("articles.json")
-                          .then(res=> res.json());
+        const res = await fetch ("articles.json")
+                          .then (res=> res.json());
 
         // Donne la reponse du produit
-        setProductData(await res);
+        setProductData (await res);
     }
 
     // Fonction fleche useEffect qui retoune la reponse de la requete

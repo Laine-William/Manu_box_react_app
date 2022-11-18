@@ -26,7 +26,7 @@ const Header = () => {
         totalItems,
     } = useCart();
 
-    // 
+    // Retourne le contenu
     return (
 
         // Barre de navigation 
