@@ -40,25 +40,25 @@ const MyAccount = () => {
                                 <Heading heading="Nos offres de box sans engagement" size="h3" />
                                 <OrderCard 
                                     title="XL"
-                                    img="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
-                                    deliveredDate="05 July, 2022"
+                                    image="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+                                    description="05 July, 2022"
                                 />
                                 <OrderCard 
                                     title="L"
                                     img="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
-                                    deliveredDate="05 July, 2022"
+                                    description="05 July, 2022"
                                 />
                                 <OrderCard 
                                     title="M"
                                     img="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
-                                    deliveredDate="05 July, 2022"
+                                    description="05 July, 2022"
                                 />
                                 <OrderCard 
                                     orderDate="24 Jun, 2022" 
                                     orderId="1334" 
                                     title="S"
                                     img="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
-                                    deliveredDate="05 July, 2022"
+                                    description="05 July, 2022"
                                 />
                             </Tab.Pane>
                             <Tab.Pane eventKey="offre-detail">
@@ -66,7 +66,7 @@ const MyAccount = () => {
                                 <OrderCard 
                                     title="Mens Casual Premium Slim Fit T-Shirts"
                                     img="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
-                                    deliveredDate="05 July, 2022"
+                                    description="05 July, 2022"
                                 />
                             </Tab.Pane>
                             <Tab.Pane eventKey="contact">
@@ -74,7 +74,7 @@ const MyAccount = () => {
                                 <OrderCard 
                                     title="Mens Casual Premium Slim Fit T-Shirts"
                                     img="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
-                                    deliveredDate="05 July, 2022"
+                                    description="05 July, 2022"
                                 />
                             </Tab.Pane>
                         </Tab.Content>
