@@ -1,6 +1,5 @@
 import React from 'react';
 import { Button, Card} from 'react-bootstrap';
-import { useThemeHook } from '../GlobalComponents/ThemeProvider';
 import { useCart } from 'react-use-cart';
 
 const ProductCard = (props) => {
@@ -28,7 +27,7 @@ const ProductCard = (props) => {
                     {title}
                 </Card.Title>
                 <Card.Title>
-                    <span className="h3">{tall}</span> m2
+                    <span className="h3">{tall}</span> m²
                 </Card.Title>
                 <Button
                     onClick={()=> addToCart()}

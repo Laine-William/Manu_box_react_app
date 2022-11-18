@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Row, Col, Tab, Nav, Image} from 'react-bootstrap';
-import { useThemeHook } from '../GlobalComponents/ThemeProvider';
 import Heading from  '../components/Heading';
 import { FaClipboardList, FaUser } from 'react-icons/fa';
 import { IoLocationSharp } from 'react-icons/io5';
@@ -9,7 +8,7 @@ import OrderCard from '../components/OrderCard';
 
 
 const MyAccount = () => {
-    const [theme] = useThemeHook();
+
     return (
         <Container className="py-5 mt-5">
             <Heading heading="Nos services" />
@@ -39,26 +38,24 @@ const MyAccount = () => {
                             <Tab.Pane eventKey="mon-offre">
                                 <Heading heading="Nos offres de box sans engagement" size="h3" />
                                 <OrderCard 
-                                    title="XL"
+                                    title="S"
                                     image="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
-                                    description="05 July, 2022"
-                                />
-                                <OrderCard 
-                                    title="L"
-                                    img="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
-                                    description="05 July, 2022"
+                                    description="Boxes S de 2 à 3 m² : 50€ HT / mois"
                                 />
                                 <OrderCard 
                                     title="M"
                                     img="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
-                                    description="05 July, 2022"
+                                    description="Boxes M de 3 à 6 m² : 80€ HT / mois"
                                 />
                                 <OrderCard 
-                                    orderDate="24 Jun, 2022" 
-                                    orderId="1334" 
-                                    title="S"
+                                    title="L"
                                     img="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
-                                    description="05 July, 2022"
+                                    description="Boxes L de 6 à 10 m² : 140€ HT / mois"
+                                />
+                                <OrderCard 
+                                    title="XL"
+                                    img="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
+                                    description="Boxes XL de 10 à 16 m² : 200€ HT / mois"                                     
                                 />
                             </Tab.Pane>
                             <Tab.Pane eventKey="offre-detail">
