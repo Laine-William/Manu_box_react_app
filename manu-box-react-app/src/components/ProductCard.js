@@ -3,12 +3,12 @@ import { Button, Card} from 'react-bootstrap';
 import { useCart } from 'react-use-cart';
 
 const ProductCard = (props) => {
-    let { image, tall, title} = props.data;
+    let { image, price, title} = props.data;
     const { addItem } = useCart();
 
     const addToCart = () =>{
         addItem(props.data);
-        console.log(props.data)
+        console.log(props.data);
     }
     return (
         <Card 
@@ -28,7 +28,7 @@ const ProductCard = (props) => {
                     {title}
                 </Card.Title>
                 <Card.Title>
-                    <span className="h3">{tall}</span> m²
+                    <span className="h3">{price}</span> m²
                 </Card.Title>
                 <Button
                     onClick={()=> addToCart()}

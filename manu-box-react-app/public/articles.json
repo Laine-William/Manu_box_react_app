@@ -2,7 +2,7 @@
     {
         "id" : 1,
         "title": "Petit refrigerateur",
-        "tall":0.64,
+        "price":0.64,
         "quantity":1,
         "category":"home-appliance",
         "description":"Petit refrigerateur de 80cm de longueur et largeur",
@@ -11,7 +11,7 @@
     {
         "id" : 2,
         "title": "Grand refrigerateur",
-        "tall":0.78,
+        "price":0.78,
         "quantity":1,
         "category":"home-appliance",
         "description":"Grand refrigerateur de 100cm de longueur et 78cm de largeur",
@@ -21,7 +21,7 @@
     {
         "id" : 3,
         "title": "Table",
-        "tall":1,
+        "price":1,
         "quantity":1,
         "category":"furniture",
         "description":"Table de 100cm de longueur et largeur",
@@ -31,7 +31,7 @@
     {
         "id" : 4,
         "title": "Chaise",
-        "tall":0.33,
+        "price":0.33,
         "quantity":1,
         "category":"furniture",
         "description":"Chaise de 60cm de longueur et 55cm de largeur",
@@ -41,7 +41,7 @@
     {
         "id" : 5,
         "title": "Canapé",
-        "tall":2,
+        "price":2,
         "quantity":1,
         "category":"furniture",
         "description":"Canapé de 200cm de longueur et 100cm de largeur",
@@ -51,7 +51,7 @@
     {
         "id" : 6,
         "title": "Fauteuil",
-        "tall":0.72,
+        "price":0.72,
         "category":"furniture",
         "description":"Fauteuil de 90cm de longueur et 80cm de largeur",
         "image":"products/images/armchair.svg"
@@ -59,7 +59,7 @@
     {
         "id" : 7,
         "title": "Meuble TV",
-        "tall":0.68,
+        "price":0.68,
         "category":"furniture",
         "description":"Meuble TV de 170cm de longueur et 40cm de largeur",
         "image":"products/images/tv-stand.svg"
@@ -67,7 +67,7 @@
     {
         "id" : 8,
         "title": "Four",
-        "tall":0.33,
+        "price":0.33,
         "category":"home-appliance",
         "description":"Four de 60cm de longueur et 55cm de largeur",
         "image":"products/images/oven.svg"
@@ -75,7 +75,7 @@
     {
         "id" : 9,
         "title": "Bureau",
-        "tall":0.91,
+        "price":0.91,
         "category":"furniture",
         "description":"Bureau de 130cm de longueur et 70cm de largeur",
         "image":"products/images/desk.svg"
@@ -83,7 +83,7 @@
     {
         "id" : 10,
         "title": "Étagère",
-        "tall":0.36,
+        "price":0.36,
         "category":"storage",
         "description":"Étagère de 80cm de longueur et 45cm de largeur",
         "image":"products/images/cabinet.svg"
@@ -92,7 +92,7 @@
     {
         "id" : 11,
         "title": "Bahut",
-        "tall":0.81,
+        "price":0.81,
         "category":"home-appliance",
         "description":"Bahut de 180cm de longueur et 45cm de largeur",
         "image":"products/images/bahut.svg"
@@ -100,7 +100,7 @@
     {   
         "id" : 12,
         "title": "Lave vaisselle",
-        "tall":0.2475,
+        "price":0.2475,
         "category":"home-appliance",
         "description":"Lave vaiselle de 55cm de longueur et 45cm de largeur",
         "image":"products/images/dishwasher.svg"
@@ -108,7 +108,7 @@
     {
         "id" : 13,
         "title": "Lit simple",
-        "tall":1.71,
+        "price":1.71,
         "quantity":1.0,
         "category":"furniture",
         "description":"Lit de 190cm de longueur et 90cm de largeur",
@@ -117,7 +117,7 @@
     {
         "id" : 14,
         "title": "Lit double",
-        "tall":3.2,
+        "price":3.2,
         "category":"furniture",
         "quantity":1,
         "description":"Lit de 200cm de longueur et 160cm de largeur",
@@ -127,7 +127,7 @@
     {
         "id" : 15,
         "title": "Machine à laver/Sèche linge",
-        "tall":0.33,
+        "price":0.33,
         "quantity":1,
         "category":"home-appliance",
         "description":"Machine de 60cm de longueur et 55cm de largeur",
