@@ -6,20 +6,26 @@ import SearchFilter from 'react-filter-search';
 import ProductCard from '../components/ProductCard';
 
 const Home = () => {
+
     const [searchInput, setSearchInput] = useState('');
+
     const [productData, setProductData] = useState([]);
 
     async function getResponse(){
+
         const res = await fetch("articles.json")
                           .then(res=> res.json());
-                          setProductData(await res);
+
+        setProductData(await res);
     }
 
     useEffect(()=>{
+
         getResponse();
     },[]);
 
     return (
+        
         <Container className="py-4">
             <Row className="justify-content-center">
                 <Col xs={10} md={7} lg={6} xl={4} className="mb-3 mx-auto text-center">
