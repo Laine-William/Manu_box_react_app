@@ -1,5 +1,9 @@
 import React from 'react';
-import { Card, Row, Col, Badge } from 'react-bootstrap';
+import { Card, 
+         Row, 
+         Col, 
+         Badge } from 'react-bootstrap';
+         
 import { useThemeHook } from '../GlobalComponents/ThemeProvider';
 
 const OrderCard = (props) => {
@@ -8,7 +12,7 @@ const OrderCard = (props) => {
        <Card className={`mb-3`} border={theme? 'warning' : 'primary'}>
             <Card.Header>
                 <b>{props.box}</b>
-                <small className="float-end">Taille de la box: {props.boxId}</small>
+                <small className="float-end">{props.boxId}</small>
             </Card.Header>
             <Row className="p-2">
                 <Col xs={3} sm={2}>
@@ -18,9 +22,7 @@ const OrderCard = (props) => {
                     <Card.Body>
                         <Card.Title>{props.title}</Card.Title>
                         <Card.Text>
-                            <Badge pill bg="success">
-                                Description : {props.description}
-                            </Badge>
+                            <Badge pill bg="success">{props.description}</Badge>
                         </Card.Text>
                     </Card.Body>
                 </Col>

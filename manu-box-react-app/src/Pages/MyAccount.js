@@ -23,11 +23,11 @@ const MyAccount = () => {
                                     <FaClipboardList size="1.4rem" />
                                 </Nav.Link>
                                 <Nav.Link eventKey="offre-detail">
-                                    La Manu-box en details
+                                    La Manu box en details
                                     <FaUser size="1.4rem" />
                                 </Nav.Link>
                                 <Nav.Link eventKey="contact">
-                                    La Manu-box contact
+                                    La Manu box contact
                                     <IoLocationSharp size="1.4rem" />
                                 </Nav.Link>
                             </Nav.Item>
@@ -38,40 +38,43 @@ const MyAccount = () => {
                             <Tab.Pane eventKey="mon-offre">
                                 <Heading heading="Nos offres de box sans engagement" size="h3" />
                                 <OrderCard 
+                                    boxId="Taille de la box"
                                     title="S"
-                                    image="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+                                    image="../images/box_size.jpg"
                                     description="Boxes S de 2 à 3 m² : 50€ HT / mois"
                                 />
                                 <OrderCard 
+                                    boxId="Taille de la box"
                                     title="M"
-                                    img="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
+                                    image="images/box_size.jpg"
                                     description="Boxes M de 3 à 6 m² : 80€ HT / mois"
                                 />
                                 <OrderCard 
+                                    boxId="Taille de la box"
                                     title="L"
-                                    img="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
+                                    image="images/box_size.jpg"
                                     description="Boxes L de 6 à 10 m² : 140€ HT / mois"
                                 />
                                 <OrderCard 
+                                    boxId="Taille de la box"
                                     title="XL"
-                                    img="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
+                                    image="images/box_size.jpg"
                                     description="Boxes XL de 10 à 16 m² : 200€ HT / mois"                                     
                                 />
                             </Tab.Pane>
                             <Tab.Pane eventKey="offre-detail">
                                 <Heading heading="Detail de l'offre" size="h3" />
                                 <OrderCard 
-                                    title="Mens Casual Premium Slim Fit T-Shirts"
-                                    img="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
-                                    description="05 July, 2022"
+                                    title="Les emplacements de stockage sont sécurisés par vidéosurveillance, avec alarme vol et incendie, et sont accessibles 7j/7 par badge personnalisé."
+                                    image="images/manu_box"
+
                                 />
                             </Tab.Pane>
                             <Tab.Pane eventKey="contact">
                                 <Heading heading="Contact" size="h3" />
                                 <OrderCard 
-                                    title="Mens Casual Premium Slim Fit T-Shirts"
-                                    img="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
-                                    description="05 July, 2022"
+                                    image="images/manu_box"
+                                    description="12 rue Casimir de la vigne 76600, Le Havre"
                                 />
                             </Tab.Pane>
                         </Tab.Content>
