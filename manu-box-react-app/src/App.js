@@ -1,11 +1,16 @@
+
 import React from "react";
+
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 import Header from './components/Header';
 
+
 import { Router } from "@reach/router";
+
 
 import Home from './Pages/Home';
 import Cart from './Pages/Cart';
