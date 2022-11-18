@@ -1,27 +1,35 @@
 import React from 'react';
+
+
 import { Container, 
          Navbar, 
          Nav } from 'react-bootstrap';
 
+
 import { FaCouch } from 'react-icons/fa';
 import { IoMdContact } from 'react-icons/io';
 
+
 import { Link } from "@reach/router";
 
+
 import { useCart } from "react-use-cart";
+
 
 const Header = () => {
 
     const {
+
         isEmpty,
         totalItems,
     } = useCart();
 
     return (
+
+
         <Navbar collapseOnSelect expand="md"
                 className={'bg-light border-bottom'}
-                style={{ width: '100%', position: 'fixed', zIndex: 100}}
-        >
+                style={{ width: '100%', position: 'fixed', zIndex: 100}}>
         <Container>
           <Link to="/">
             <Navbar.Brand className={'text-light-primary'}>
