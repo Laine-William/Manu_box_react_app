@@ -16,7 +16,7 @@ import { Link } from "@reach/router";
 // Importe le composant panier
 import { useCart } from "react-use-cart";
 
-// 
+// Fonction fleche pour Header qui retoune une entete
 const Header = () => {
 
   // 
@@ -52,7 +52,7 @@ const Header = () => {
           {/* Changement de la barre de navigation pour le mobile */}
           <Navbar.Collapse id="basic-navbar-nav">
 
-            {/*  */}
+            {/* Navigation */}
             <Nav className="ms-auto">
 
               {/* Liens du panier */}
