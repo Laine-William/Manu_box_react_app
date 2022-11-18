@@ -34,7 +34,9 @@ const Cart = () => {
                     <tbody>
                         
                         {items.map((item, index)=>{
+
                             return(
+
                                 <tr key={index}>
                                     <td>
                                         <div style={{ background: 'white', height: '8rem', overflow: 'hidden', display: 'flex',
@@ -44,11 +46,13 @@ const Cart = () => {
                                             </div>
                                         </div>
                                     </td>
+
                                     <td>
                                         <h6 style={{ whiteSpace: 'nowrap', width: '14rem', overflow: 'hidden', textOverFlow: 'ellipsis'}}>
                                             {item.title}
                                         </h6>
                                     </td>
+
                                     <td>{item.price} m2</td>
                                     <td>Quantite ({item.quantity})</td>
                                     <td>
@@ -61,20 +65,20 @@ const Cart = () => {
                         })}
                     </tbody>
                 </Table>
+                
                 {!isEmpty &&
                     <Row 
                         style={{ position: 'fixed', bottom: 0}}
-                        className={`justify-content-center w-100`}
-                    >
+                        className={`justify-content-center w-100`}>
                         <Col className="py-2">
                             <h4>Taille total : {cartTotal} m²</h4>
                             <h4>Votre taille de box : {}</h4>
                         </Col>
+
                         <Col className="p-0" md={4}>
                             <Button variant="danger"
                                 className="m-2"
-                                onClick={()=> emptyCart()}
-                            >
+                                onClick={()=> emptyCart()}>
                                 <BsCartX size="1.7rem" />
                                 Vider le panier en cours
                             </Button>
