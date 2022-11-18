@@ -5,7 +5,7 @@ import { useThemeHook } from '../GlobalComponents/ThemeProvider';
 const OrderCard = (props) => {
     const [theme] = useThemeHook();
     return (
-       <Card className={`${theme? 'bg-light-black text-light' : 'bg-light text-black'} mb-3`} border={theme? 'warning' : 'primary'}>
+       <Card className={`mb-3`} border={theme? 'warning' : 'primary'}>
             <Card.Header>
                 <b>{props.box}</b>
                 <small className="float-end">Taille de la box: {props.boxId}</small>

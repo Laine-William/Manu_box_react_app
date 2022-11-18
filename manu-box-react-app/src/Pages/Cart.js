@@ -31,14 +31,14 @@ const Cart = () => {
 
         <Container className="py-4 mt-5">
 
-            <h1 className={`${theme? 'text-light': 'text-light-primary'} my-5 text-center`}>
+            <h1 className={`my-5 text-center`}>
 
                 {isEmpty? 'Votre panier est vide !' : 'Le Panier'}
             </h1>
 
             <Row className="justify-content-center">
 
-                <Table responsive="sm" striped bordered hover variant={theme? 'dark': 'light'} className="mb-5">
+                <Table responsive="sm" striped bordered hover variant className="mb-5">
 
                     <tbody>
                         
@@ -73,7 +73,7 @@ const Cart = () => {
                 {!isEmpty &&
                     <Row 
                         style={{ position: 'fixed', bottom: 0}}
-                        className={`${theme? 'bg-light-black text-light' : 'bg-light text-balck'} justify-content-center w-100`}
+                        className={`justify-content-center w-100`}
                     >
                         <Col className="py-2">
                             <h4>Taille total : {cartTotal} m2</h4>

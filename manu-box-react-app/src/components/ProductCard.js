@@ -5,7 +5,6 @@ import { useCart } from 'react-use-cart';
 
 const ProductCard = (props) => {
     let { image, tall, title} = props.data;
-    const [theme] = useThemeHook();
     const { addItem } = useCart();
 
     const addToCart = () =>{
@@ -14,7 +13,7 @@ const ProductCard = (props) => {
     return (
         <Card 
             style={{ width: '18rem', height: 'auto' }}
-            className={`${theme? 'bg-light-black text-light':'bg-lihgt text-black'} text-center p-0 overflow-hidden shadow mx-auto mb-4`}
+            className={`text-center p-0 overflow-hidden shadow mx-auto mb-4`}
         >
 
                 <div style={{ background: 'white', height: '15rem', overflow: 'hidden', display: 'flex',
@@ -33,7 +32,7 @@ const ProductCard = (props) => {
                 </Card.Title>
                 <Button
                     onClick={()=> addToCart()}
-                    className={`${theme? 'bg-dark-primary text-black':'bg-light-primary' } d-flex align-item-center m-auto border-0`}
+                    className={`d-flex align-item-center m-auto border-0`}
                 >
                     Ajouter
                 </Button>
