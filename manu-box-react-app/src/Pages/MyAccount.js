@@ -65,16 +65,18 @@ const MyAccount = () => {
                             <Tab.Pane eventKey="offre-detail">
                                 <Heading heading="Detail de l'offre" size="h3" />
                                 <OrderCard 
+                                    boxId="Details"
                                     title="Les emplacements de stockage sont sécurisés par vidéosurveillance, avec alarme vol et incendie, et sont accessibles 7j/7 par badge personnalisé."
-                                    image="images/manu_box"
+                                    image="images/box"
 
                                 />
                             </Tab.Pane>
                             <Tab.Pane eventKey="contact">
                                 <Heading heading="Contact" size="h3" />
                                 <OrderCard 
+                                    boxId="Adresse"
                                     image="images/manu_box"
-                                    description="12 rue Casimir de la vigne 76600, Le Havre"
+                                    description="E-mail : lamanubox@gmail.com, Tel : 0768765643, Adresse : 12 rue casimir de la vigne, 76600 Le Havre'"
                                 />
                             </Tab.Pane>
                         </Tab.Content>
