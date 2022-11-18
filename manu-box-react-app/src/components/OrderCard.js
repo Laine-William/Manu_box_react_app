@@ -10,32 +10,37 @@ import { Card,
 // Importe le theme
 import { useThemeHook } from '../GlobalComponents/ThemeProvider';
 
-// Fonction fleche Home qui retoune la carte
+// Fonction fleche orderCard avec des proprietes qui retoune la carte
 const OrderCard = (props) => {
 
-
+    // 
     const [theme] = useThemeHook();
     
-
+    // 
     return (
     
-
+        // 
         <Card className={`mb-3`} border={theme? 'warning' : 'primary'}>
 
-
+            {/*  */}
             <Card.Header>
                 <b>{props.box}</b>
                 <small className="float-end">{props.boxId}</small>
             </Card.Header>
         
-
+            {/*  */}
             <Row className="p-2">
                 <Col xs={3} sm={2}>
                     <Card.Img variant="top" src={props.image} />
                 </Col>
-        
+
+                {/*  */}
                 <Col>
+                
+                    {/*  */}
                     <Card.Body>
+
+                        {/*  */}
                         <Card.Title>{props.title}</Card.Title>
                         <Card.Text>
                             <Badge pill bg="success">{props.description}</Badge>
