@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Navbar, Nav } from 'react-bootstrap';
-import { Couch} from 'react-icons/fas';
+import { BiCart} from 'react-icons/bi'
 import { VscAccount } from 'react-icons/vsc';
 import { Link } from "@reach/router";
 import { useCart } from "react-use-cart";
@@ -32,7 +32,7 @@ const Header = () => {
                 to="/cart"
                 className={`text-light-primary d-flex align-items-center`}
               >
-                <Couch size="2rem"/>
+                <BiCart size="2rem"/>
                 {!isEmpty && <span style={{ position: 'relative', left: '-21px', top: '-18px'}}>{totalItems}</span>}
                 <span style={{ marginLeft: !isEmpty ? '-13px': 0}}>&nbsp;Panier</span>
               </Link>
