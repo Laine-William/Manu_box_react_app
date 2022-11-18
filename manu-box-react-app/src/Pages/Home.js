@@ -6,7 +6,6 @@ import SearchFilter from 'react-filter-search';
 import ProductCard from '../components/ProductCard';
 
 const Home = () => {
-    const [theme] = useThemeHook();
     const [searchInput, setSearchInput] = useState('');
     const [productData, setProductData] = useState([]);
 
