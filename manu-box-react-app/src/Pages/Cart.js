@@ -7,16 +7,9 @@ import { Button, Container, Col, Row, Table} from 'react-bootstrap';
 
 import { useCart } from 'react-use-cart';
 
-
-import { useThemeHook } from '../GlobalComponents/ThemeProvider';
-
-
 import { BsCartX} from 'react-icons/bs';
 
-
 const Cart = () => {
-
-    const [theme] = useThemeHook();
 
     const {
         isEmpty,
