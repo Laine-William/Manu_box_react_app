@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, Tab, Nav, Image} from 'react-bootstrap';
+import { Container, Row, Col, Tab, Nav} from 'react-bootstrap';
 import Heading from  '../components/Heading';
 import { FaClipboardList, FaUser } from 'react-icons/fa';
 import { IoLocationSharp } from 'react-icons/io5';
