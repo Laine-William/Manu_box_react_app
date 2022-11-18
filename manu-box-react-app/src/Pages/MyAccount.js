@@ -67,7 +67,7 @@ const MyAccount = () => {
                                 <OrderCard 
                                     boxId="Details"
                                     title="Les emplacements de stockage sont sécurisés par vidéosurveillance, avec alarme vol et incendie, et sont accessibles 7j/7 par badge personnalisé."
-                                    image="images/box"
+                                    image="images/box.jpg"
 
                                 />
                             </Tab.Pane>
@@ -75,7 +75,7 @@ const MyAccount = () => {
                                 <Heading heading="Contact" size="h3" />
                                 <OrderCard 
                                     boxId="Adresse"
-                                    image="images/manu_box"
+                                    image="images/manu.png"
                                     description="E-mail : lamanubox@gmail.com, Tel : 0768765643, Adresse : 12 rue casimir de la vigne, 76600 Le Havre'"
                                 />
                             </Tab.Pane>
