@@ -117,7 +117,7 @@ const MyAccount = () => {
                             {/* Onglet offre-details */}
                             <Tab.Pane eventKey="offre-detail">
                                 
-                                {/* Rubrique */}
+                                {/* Rubrique detail de l'offre */}
                                 <Heading heading="Detail de l'offre" size="h3" />
                                 
                                 {/* Appel l'offre detaille */}
