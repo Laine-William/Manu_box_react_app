@@ -3,6 +3,7 @@
         "id" : 1,
         "title": "Petit refrigerateur",
         "tall":0.64,
+        "quantity":1,
         "category":"home-appliance",
         "description":"Petit refrigerateur de 80cm de longueur et largeur",
         "image":"products/images/fridge.svg"
@@ -11,6 +12,7 @@
         "id" : 2,
         "title": "Grand refrigerateur",
         "tall":0.78,
+        "quantity":1,
         "category":"home-appliance",
         "description":"Grand refrigerateur de 100cm de longueur et 78cm de largeur",
         "image":"products/images/fridge-double.svg"
@@ -20,6 +22,7 @@
         "id" : 3,
         "title": "Table",
         "tall":1,
+        "quantity":1,
         "category":"furniture",
         "description":"Table de 100cm de longueur et largeur",
         "image":"products/images/table.svg"
@@ -29,6 +32,7 @@
         "id" : 4,
         "title": "Chaise",
         "tall":0.33,
+        "quantity":1,
         "category":"furniture",
         "description":"Chaise de 60cm de longueur et 55cm de largeur",
         "image":"products/images/chair.svg"
@@ -38,6 +42,7 @@
         "id" : 5,
         "title": "Canapé",
         "tall":2,
+        "quantity":1,
         "category":"furniture",
         "description":"Canapé de 200cm de longueur et 100cm de largeur",
         "image":"products/images/sofa.svg"
