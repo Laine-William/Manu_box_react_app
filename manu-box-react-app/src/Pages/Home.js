@@ -44,8 +44,11 @@ const Home = () => {
 
                         <FormControl 
                             placeholder="Taper votre recherche"
+
                             value={searchInput}
+
                             onChange={(e)=> setSearchInput(e.target.value)}
+                            
                             className='bg-light text-black'
                         />
                     </InputGroup>
@@ -59,7 +62,7 @@ const Home = () => {
 
                         <Row className="justify-content-center">
                             {results.map((item, i)=>(
-                                
+
                                 <ProductCard data={item} key={i} />
                             ))}
                         </Row>

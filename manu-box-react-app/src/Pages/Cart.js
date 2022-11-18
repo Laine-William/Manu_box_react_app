@@ -7,6 +7,8 @@ import { useCart } from 'react-use-cart';
 
 import { BsCartX} from 'react-icons/bs';
 
+import { Link } from "@reach/router";
+
 const Cart = () => {
 
     const {
@@ -54,12 +56,14 @@ const Cart = () => {
                                     </td>
 
                                     <td>{item.price} m2</td>
+
                                     <td>Quantite ({item.quantity})</td>
+
                                     <td>
                                         <Button onClick={()=> updateItemQuantity(item.id, item.quantity - 1)} className="ms-2">-</Button>
 
                                         <Button onClick={()=> updateItemQuantity(item.id, item.quantity + 1)} className="ms-2">+</Button>
-                                        
+
                                         <Button variant="danger" onClick={()=> removeItem(item.id)} className="ms-2">Supprimer cette article</Button>
                                     </td>
                                 </tr>
@@ -74,7 +78,10 @@ const Cart = () => {
                         className={`justify-content-center w-100`}>
                         <Col className="py-2">
                             <h4>Taille total : {cartTotal} m²</h4>
-                            <h4>Votre taille de box : {}</h4>
+                            <h4>Votre taille de box : {}
+                                <Link to="../my-account">
+                                    <Button className="ms-2">Voir les offres</Button>
+                                </Link></h4>
                         </Col>
 
                         <Col className="p-0" md={4}>
