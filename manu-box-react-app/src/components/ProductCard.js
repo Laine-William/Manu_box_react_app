@@ -8,6 +8,7 @@ const ProductCard = (props) => {
 
     const addToCart = () =>{
         addItem(props.data);
+        console.log(props.data)
     }
     return (
         <Card 
