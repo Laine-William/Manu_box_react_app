@@ -57,7 +57,9 @@ const Cart = () => {
                                     <td>Quantite ({item.quantity})</td>
                                     <td>
                                         <Button onClick={()=> updateItemQuantity(item.id, item.quantity - 1)} className="ms-2">-</Button>
+
                                         <Button onClick={()=> updateItemQuantity(item.id, item.quantity + 1)} className="ms-2">+</Button>
+                                        
                                         <Button variant="danger" onClick={()=> removeItem(item.id)} className="ms-2">Supprimer cette article</Button>
                                     </td>
                                 </tr>
