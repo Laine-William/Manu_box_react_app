@@ -1,7 +1,14 @@
-import React, {useEffect, useState} from 'react';
-import { Container, Row, Col, InputGroup, FormControl } from 'react-bootstrap';
-import { useThemeHook } from '../GlobalComponents/ThemeProvider';
+import React, {useEffect, 
+               useState} from 'react';
+
+import { Container, 
+         Row, 
+         Col, 
+         InputGroup, 
+         FormControl } from 'react-bootstrap';
+
 import { BiSearch } from 'react-icons/bi';
+
 import SearchFilter from 'react-filter-search';
 import ProductCard from '../components/ProductCard';
 
@@ -25,7 +32,7 @@ const Home = () => {
     },[]);
 
     return (
-        
+
         <Container className="py-4">
             <Row className="justify-content-center">
                 <Col xs={10} md={7} lg={6} xl={4} className="mb-3 mx-auto text-center">
@@ -34,6 +41,7 @@ const Home = () => {
                         <InputGroup.Text className='bg-light text-light-primary'>
                             <BiSearch size="2rem" />
                         </InputGroup.Text>
+
                         <FormControl 
                             placeholder="Taper votre recherche"
                             value={searchInput}
@@ -42,12 +50,16 @@ const Home = () => {
                         />
                     </InputGroup>
                 </Col>
+
                 <SearchFilter 
                     value={searchInput}
+
                     data={productData}
                     renderResults={results =>(
+
                         <Row className="justify-content-center">
                             {results.map((item, i)=>(
+                                
                                 <ProductCard data={item} key={i} />
                             ))}
                         </Row>
