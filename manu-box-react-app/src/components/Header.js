@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Navbar, Nav } from 'react-bootstrap';
-import { BiCart} from 'react-icons/bi'
-import { VscAccount } from 'react-icons/vsc';
+import { FaCouch} from 'react-icons/fa';
+import { IoMdContact } from 'react-icons/io';
 import { Link } from "@reach/router";
 import { useCart } from "react-use-cart";
 
@@ -32,12 +32,12 @@ const Header = () => {
                 to="/cart"
                 className={`text-light-primary d-flex align-items-center`}
               >
-                <BiCart size="2rem"/>
+                <FaCouch size="2rem"/>
                 {!isEmpty && <span style={{ position: 'relative', left: '-21px', top: '-18px'}}>{totalItems}</span>}
                 <span style={{ marginLeft: !isEmpty ? '-13px': 0}}>&nbsp;Mes meubles</span>
               </Link>
               <Link to="my-account" className={`nav-link 'text-light-primary`}>
-                  <VscAccount size="1.8rem"/>
+                  <IoMdContact size="1.8rem"/>
                   &nbsp;Nos offres de services
               </Link>
             </Nav>
