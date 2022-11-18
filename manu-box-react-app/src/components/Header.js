@@ -1,10 +1,9 @@
 import React from 'react';
 import { Container, Navbar, Nav } from 'react-bootstrap';
-import { FaCouch} from 'react-icons/fa';
+import { FaCouch } from 'react-icons/fa';
 import { IoMdContact } from 'react-icons/io';
 import { Link } from "@reach/router";
 import { useCart } from "react-use-cart";
-
 
 const Header = () => {
 
