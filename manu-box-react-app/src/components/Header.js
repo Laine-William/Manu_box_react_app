@@ -1,19 +1,19 @@
-// 
+// Importe les npm install
 import React from 'react';
 
-// 
+// Importe les composants bootstrap
 import { Container, 
          Navbar, 
          Nav } from 'react-bootstrap';
 
-// 
+// Importe les icones 
 import { FaCouch } from 'react-icons/fa';
 import { IoMdContact } from 'react-icons/io';
 
-// 
+// Importe les liens avec une route
 import { Link } from "@reach/router";
 
-// 
+// Importe le composant panier
 import { useCart } from "react-use-cart";
 
 // 
@@ -33,39 +33,40 @@ const Header = () => {
         <Navbar collapseOnSelect expand="md"
                 className={'bg-light border-bottom'}
                 style={{ width: '100%', position: 'fixed', zIndex: 100}}>
-        {/*  */}
+        
+        {/* Conteneur */}
         <Container>
 
-          {/*  */}
+          {/* Liens */}
           <Link to="/">
 
-            {/*  */}
+            {/* Barre de navigation avec la marque */}
             <Navbar.Brand className={'text-light-primary'}>
                 <b>La Manu box</b>
             </Navbar.Brand>
           </Link>
 
-          {/*  */}
+          {/* Changement de la barre de navigation pour pc */}
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
-          {/*  */}
+          {/* Changement de la barre de navigation pour le mobile */}
           <Navbar.Collapse id="basic-navbar-nav">
 
             {/*  */}
             <Nav className="ms-auto">
 
-              {/*  */}
+              {/* Liens du panier */}
               <Link
                 to="/cart"
                 className={`text-light-primary d-flex align-items-center`}>
 
-                {/*  */}
+                {/* Icone du canape avec un ajout d'article au dessus s'il n'est pas vide */}
                 <FaCouch size="2rem"/>
                 {! isEmpty && <span style={{ position: 'relative', left: '-21px', top: '-18px'}}>{totalItems}</span>}
                 <span style={{ marginLeft: !isEmpty ? '-13px': 0}}>&nbsp;Mes meubles</span>
               </Link>
               
-              {/*  */}
+              {/* Liens de nos offres de services avec un icone */}
               <Link to="my-account" className={`nav-link 'text-light-primary`}>
                   <IoMdContact size="1.8rem"/>
                   &nbsp;Nos offres de services

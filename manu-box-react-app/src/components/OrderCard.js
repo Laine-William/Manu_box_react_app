@@ -16,7 +16,7 @@ const OrderCard = (props) => {
     // 
     const [theme] = useThemeHook();
     
-    // 
+    // Retourne la carte
     return (
     
         // 
@@ -36,7 +36,7 @@ const OrderCard = (props) => {
 
                 {/*  */}
                 <Col>
-                
+
                     {/*  */}
                     <Card.Body>
 
