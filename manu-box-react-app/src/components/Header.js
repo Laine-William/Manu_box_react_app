@@ -26,10 +26,11 @@ const Header = () => {
 
     return (
 
-
+        // Barre de navigation 
         <Navbar collapseOnSelect expand="md"
                 className={'bg-light border-bottom'}
                 style={{ width: '100%', position: 'fixed', zIndex: 100}}>
+        {/*  */}
         <Container>
           <Link to="/">
             <Navbar.Brand className={'text-light-primary'}>
@@ -42,8 +43,8 @@ const Header = () => {
             <Nav className="ms-auto">
               <Link
                 to="/cart"
-                className={`text-light-primary d-flex align-items-center`}
-              >
+                className={`text-light-primary d-flex align-items-center`}>
+                  
                 <FaCouch size="2rem"/>
                 {! isEmpty && <span style={{ position: 'relative', left: '-21px', top: '-18px'}}>{totalItems}</span>}
                 <span style={{ marginLeft: !isEmpty ? '-13px': 0}}>&nbsp;Mes meubles</span>

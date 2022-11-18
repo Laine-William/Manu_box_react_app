@@ -36,7 +36,7 @@ const Home = () => {
         setProductData(await res);
     }
 
-     // Fonction fleche useEffect qui retoune la reponse de la requete
+    // Fonction fleche useEffect qui retoune la reponse de la requete
     useEffect (() => {
 
         getResponse();
