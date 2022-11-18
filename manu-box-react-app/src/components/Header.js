@@ -34,7 +34,7 @@ const Header = () => {
               >
                 <BiCart size="2rem"/>
                 {!isEmpty && <span style={{ position: 'relative', left: '-21px', top: '-18px'}}>{totalItems}</span>}
-                <span style={{ marginLeft: !isEmpty ? '-13px': 0}}>&nbsp;Panier</span>
+                <span style={{ marginLeft: !isEmpty ? '-13px': 0}}>&nbsp;Mes meubles</span>
               </Link>
               <Link to="my-account" className={`nav-link 'text-light-primary`}>
                   <VscAccount size="1.8rem"/>
