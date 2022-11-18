@@ -1,4 +1,6 @@
+
 import React from 'react';
+
 
 import { Container,
          Row, 
@@ -6,13 +8,17 @@ import { Container,
          Tab, 
          Nav} from 'react-bootstrap';
 
+
 import Heading from  '../components/Heading';
+
 
 import { FaClipboardList, 
          FaUser } from 'react-icons/fa';
 import { IoLocationSharp } from 'react-icons/io5';
 
+
 import './my-account.css';
+
 
 import OrderCard from '../components/OrderCard';
 
@@ -20,6 +26,7 @@ import OrderCard from '../components/OrderCard';
 const MyAccount = () => {
 
     return (
+        
         <Container className="py-5 mt-5">
             <Heading heading="Nos services" />
             <Tab.Container defaultActiveKey="mon-offre">
