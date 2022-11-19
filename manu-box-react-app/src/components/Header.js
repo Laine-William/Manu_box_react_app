@@ -29,28 +29,28 @@ const Header = () => {
   // Retourne le contenu
   return (
 
-  // Barre de navigation 
-  <Navbar collapseOnSelect expand = "md"
-          className = { 'bg-light border-bottom' }
-          style = {{ width : '100%', position : 'fixed', zIndex : 100 }}>
+    // Barre de navigation 
+    <Navbar collapseOnSelect expand = "md"
+            className = { 'bg-light border-bottom' }
+            style = {{ width : '100%', position : 'fixed', zIndex : 100 }}>
         
-    {/* Conteneur */}
-    <Container>
+      {/* Conteneur */}
+      <Container>
 
-      {/* Liens */}
-      <Link to="/">
+        {/* Liens */}
+        <Link to="/">
 
-        {/* Barre de navigation avec la marque (titre) */}
-        <Navbar.Brand className = { 'text-light-primary' }>
-          <b>La Manu box</b>
-        </Navbar.Brand>
-      </Link>
+          {/* Barre de navigation avec la marque (titre) */}
+          <Navbar.Brand className = { 'text-light-primary' }>
+            <b>La Manu box</b>
+          </Navbar.Brand>
+        </Link>
 
-      {/* Changement de la barre de navigation pour pc */}
-      <Navbar.Toggle aria-controls = "basic-navbar-nav" />
+        {/* Changement de la barre de navigation pour pc */}
+        <Navbar.Toggle aria-controls = "basic-navbar-nav" />
 
       {/* Changement de la barre de navigation pour le mobile */}
-      <Navbar.Collapse id="basic-navbar-nav">
+      <Navbar.Collapse id = "basic-navbar-nav">
 
         {/* Navigation */}
         <Nav className="ms-auto">
