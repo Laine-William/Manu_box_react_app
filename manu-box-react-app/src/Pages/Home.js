@@ -104,7 +104,7 @@ const Home = () => {
                             {/* Parcourt les resultats et item avec la méthode map */}
                             { results.map ((item, i) => (
 
-                                // Donnee des item avec leur cle
+                                // Donnee des items avec leur cle
                                 <ProductCard data = {item} key = {i} />
                             ))}
                         </Row>
