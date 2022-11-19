@@ -21,25 +21,28 @@ import ProductCard from '../components/ProductCard';
 // Fonction fleche Home qui retoune la page d'accueil
 const Home = () => {
 
-    const [searchInput, setSearchInput] = useState('');
+    // Apppel l'etat de la recherche entree
+    const [searchInput, setSearchInput] = useState ('');
 
-    const [productData, setProductData] = useState([]);
+    // Appel l'etat du produit
+    const [productData, setProductData] = useState ([]);
 
      // Fonction asynchrone pour afficher un retour de la requete
-    async function getResponse(){
+    async function getResponse () {
 
         // Reponse de la recherche avec la methode fetch pour le fichier json (stokage des donnees)
-        const res = await fetch ("articles.json")
-                          .then (res=> res.json());
+        const response = await fetch ("articles.json")
+                               .then (response => response.json ());
 
         // Donne la reponse du produit
-        setProductData (await res);
+        setProductData (await response);
     }
 
     // Fonction fleche useEffect qui retoune la reponse de la requete
     useEffect (() => {
 
-        getResponse();
+        // Affiche la reponse
+        getResponse ();
     },[]);
 
     // Retourne le contenu

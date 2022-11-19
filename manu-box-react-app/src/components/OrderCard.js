@@ -13,8 +13,8 @@ import { useThemeHook } from '../GlobalComponents/ThemeProvider';
 // Fonction fleche orderCard avec des proprietes qui retoune la carte
 const OrderCard = (props) => {
 
-    // 
-    const [theme] = useThemeHook();
+    // Appel le theme
+    const [theme] = useThemeHook ();
     
     // Retourne la carte
     return (
