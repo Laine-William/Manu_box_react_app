@@ -52,34 +52,34 @@ const Home = () => {
             <Row className="justify-content-center">
 
                 {/* Taille de la colonne */}
-                <Col xs={10} md={7} lg={6} xl={4} className="mb-3 mx-auto text-center">
+                <Col xs = {10} md = {7} lg = {6} xl = {4} className = "mb-3 mx-auto text-center">
 
                     {/* Titre */}
-                    <h1 className='text-black my-5'>Rechercher un produit</h1>
+                    <h1 className = 'text-black my-5'>Rechercher un produit</h1>
                     
                     {/* Taille du formulaire */}
-                    <InputGroup className="mb-3">
+                    <InputGroup className = "mb-3">
 
                         {/* Formulaire avec un texte en entree */}
-                        <InputGroup.Text className='bg-light text-light-primary'>
+                        <InputGroup.Text className = 'bg-light text-light-primary'>
 
                             {/* Taille icone de recherche */}
-                            <BiSearch size="2rem" />
+                            <BiSearch size = "2rem" />
                         </InputGroup.Text>
 
                         {/* Controle la forme de la recherche */}
                         <FormControl 
 
                             // Texte
-                            placeholder="Taper votre recherche"
+                            placeholder = "Taper votre recherche"
 
-                            // Valeur de la recherche
-                            value={searchInput}
+                            // Valeur de la recherche entree
+                            value = {searchInput}
 
-                            // Recherche la valeur cible (texte)
-                            onChange={(e)=> setSearchInput(e.target.value)}
+                            // Fonction fleche recherche la valeur cible (texte)
+                            onChange = { (e) => setSearchInput (e.target.value )}
 
-                            className='bg-light text-black'
+                            className = 'bg-light text-black'
                         />
                     </InputGroup>
                 </Col>
@@ -87,28 +87,27 @@ const Home = () => {
                 {/* Recherche avec un filtre */}
                 <SearchFilter 
 
-                    // Valeur de la recherche
-                    value={searchInput}
+                    // Valeur de la recherche entree
+                    value = {searchInput}
 
                     // Donne le produit de la recherche
-                    data={productData}
+                    data = {productData}
 
                     // Rendu du resultat de recherche avec une fonction fléché
-                    renderResults={results =>(
+                    renderResults = { results => (
 
                         // Ligne au contenu centrer
-                        <Row className="justify-content-center">
+                        <Row className = "justify-content-center">
 
                             {/* Parcourt les resultats et item avec la méthode map */}
-                            {results.map((item, i)=>(
+                            { results.map ((item, i) => (
 
                                 // Donnee des item avec leur cle
-                                <ProductCard data={item} key={i} />
+                                <ProductCard data = {item} key = {i} />
                             ))}
                         </Row>
                     )}
-                />
-                
+                />   
             </Row>
         </Container>
     );
