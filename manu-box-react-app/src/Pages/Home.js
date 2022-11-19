@@ -77,13 +77,12 @@ const Home = () => {
                             placeholder = "Taper votre recherche"
 
                             // Valeur de la recherche entree
-                            value = {searchInput}
+                            value = { searchInput }
 
                             // Fonction fleche recherche la valeur cible (texte)
                             onChange = { (e) => setSearchInput (e.target.value )}
 
-                            className = 'bg-light text-black'
-                        />
+                            className = 'bg-light text-black'/>
                     </InputGroup>
                 </Col>
 
@@ -91,7 +90,7 @@ const Home = () => {
                 <SearchFilter 
 
                     // Valeur de la recherche entree
-                    value = {searchInput}
+                    value = { searchInput }
 
                     // Donne le produit de la recherche
                     data = {productData}
