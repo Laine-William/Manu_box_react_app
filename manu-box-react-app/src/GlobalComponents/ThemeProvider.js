@@ -10,25 +10,26 @@ const ThemeContext = createContext ();
 // Fonction fleche ThemeProvider qui retourne les proprietes du theme fourni
 const ThemeProvider = (props) => {
 
-    // 
-    const [theme, setTheme] = useState (JSON.parse (localStorage.getItem ('theme')) || false );
+    // Theme utilise l'etat actuel pour analyser le contenu du fichier JSON en stockage local pour le theme ou retourne faux
+    const [theme] = useState (JSON.parse (localStorage.getItem ('theme')) || false );
+    console.log (theme);
     
-    // Fonction fleche useEffect qui retourne
+    // Fonction fleche useEffect qui retourne le theme
     useEffect (() => {
 
-        // 
+        // Stock localement le theme dans un fichier JSON pour le modifier en convertissant la valeur en chaine de caractere
         localStorage.setItem ('theme', JSON.stringify (theme));
+        console.log (theme);
 
     }, [theme]);
-
-    // 
-    const setThemeMode = mode => setTheme (mode);
 
     // Retourne le contenu
     return (
 
-        // 
-        <ThemeContext.Provider value = {{ theme, setThemeMode}}>
+        // Le fournisseur de theme prend la valeur du theme
+        <ThemeContext.Provider value = {{ theme }}>
+
+            {/* Propriete disponible pour les enfants */}
             {props.children}
         </ThemeContext.Provider>
     );
@@ -37,7 +38,7 @@ const ThemeProvider = (props) => {
 // Fonction fleche useThemeHook qui retourne un theme hook
 const useThemeHook = () =>{
 
-    // 
+    // Theme 
     const {theme} = useContext (ThemeContext);
     
     // Retourne le theme
