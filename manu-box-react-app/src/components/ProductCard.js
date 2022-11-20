@@ -28,12 +28,12 @@ const ProductCard = (props) => {
     // Retourne le contenu
     return (
 
-        // 
+        // Taille de la carte
         <Card 
             style = {{ width: '18rem', height: 'auto' }}
                 className = {`text-center p-0 overflow-hidden shadow mx-auto mb-4` }>
 
-                {/*  */}
+                {/* Style de la carte */}
                 <div style = {{ background : 'white', 
                                 height : '15rem', 
                                 overflow : 'hidden', 
@@ -42,7 +42,7 @@ const ProductCard = (props) => {
                                 alignItems : 'center', 
                                 marginBottom: 'inherit' }}>
 
-                    {/*  */}
+                    {/* Longueur de l'image */}
                     <div style = {{ width : '9rem' }}>
 
                         {/* Image de la carte */}
@@ -65,7 +65,8 @@ const ProductCard = (props) => {
 
                 {/* Bouton ajouter */}
                 <Button
-                    onClick = { () => addToCart () }                    
+                    onClick = { () => addToCart () }                
+
                     className = { `d-flex align-item-center m-auto border-0` }>
                     Ajouter
                 </Button>
