@@ -11,7 +11,7 @@ import { useCart } from 'react-use-cart';
 // Fonction fleche ProductCard qui retourne les proprietes du panier
 const ProductCard = (props) => {
 
-    // variables pour la carte
+    // Variables pour la carte
     let { image, 
           price, 
           title} = props.data;
