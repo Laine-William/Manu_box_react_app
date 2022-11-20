@@ -23,7 +23,7 @@ const ProductCard = (props) => {
     const addToCart = () =>{
 
         // Ajoute les proprietes de la carte
-        addItem(props.data);
+        addItem (props.data);
 
     //console.log(props.data);
     }
