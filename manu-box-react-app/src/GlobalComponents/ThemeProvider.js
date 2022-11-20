@@ -12,14 +12,14 @@ const ThemeProvider = (props) => {
 
     // Theme utilise l'etat actuel pour analyser le contenu du fichier JSON en stockage local pour le theme ou retourne faux
     const [theme] = useState (JSON.parse (localStorage.getItem ('theme')) || false );
-    console.log (theme);
+    // console.log (theme);
     
     // Fonction fleche useEffect qui retourne le theme
     useEffect (() => {
 
         // Stock localement le theme dans un fichier JSON pour le modifier en convertissant la valeur en chaine de caractere
         localStorage.setItem ('theme', JSON.stringify (theme));
-        console.log (theme);
+        // console.log (theme);
 
     }, [theme]);
 
@@ -38,7 +38,7 @@ const ThemeProvider = (props) => {
 // Fonction fleche useThemeHook qui retourne un theme hook
 const useThemeHook = () =>{
 
-    // Theme 
+    // Theme appel le context du theme
     const {theme} = useContext (ThemeContext);
     
     // Retourne le theme
