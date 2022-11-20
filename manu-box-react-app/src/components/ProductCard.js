@@ -1,25 +1,28 @@
-// 
+// Importe les npm install
 import React from 'react';
 
-// 
-import { Button, Card} from 'react-bootstrap';
+// Importe les composants bootstrap
+import { Button, 
+         Card } from 'react-bootstrap';
 
-// 
+// Importe le composant panier
 import { useCart } from 'react-use-cart';
 
-// 
+// Fonction fleche ProductCard qui retourne les proprietes du panier
 const ProductCard = (props) => {
 
-    // 
-    let { image, price, title} = props.data;
+    // variables pour la carte
+    let { image, 
+          price, 
+          title} = props.data;
 
-    // 
-    const { addItem } = useCart();
+    // Appel addItem de la methode useCart
+    const { addItem } = useCart ();
 
-    // 
+    // Fonction fleche addToCart qui ajoute au panier
     const addToCart = () =>{
 
-        // 
+        // Ajoute les proprietes de la carte
         addItem(props.data);
 
     //console.log(props.data);
@@ -63,7 +66,7 @@ const ProductCard = (props) => {
                     <span className = "h3">{ price }</span> m²
                 </Card.Title>
 
-                {/* Bouton ajouter */}
+                {/* Bouton ajouter au panier */}
                 <Button
                     onClick = { () => addToCart () }                
 
